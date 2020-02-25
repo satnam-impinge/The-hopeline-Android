@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--android:background="@mipmap/feedback_bg"-->
+
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/layer_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/feedback"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottomMark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/layer_marquee"
+            layout="@layout/layer_runningtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomMark"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <!--android:layout_marginBottom="10dp"-->
+
+        <LinearLayout
+            android:id="@+id/problm_with_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/problm_with_app"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_txt"
+                android:textSize="20sp" />
+
+            <!--<ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/grey_arrow" />-->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/grey_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tell_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/chat_green"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/tell_us"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/arrow_right" />
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:id="@+id/send_voice_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/voice_msg"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_txt"
+                android:textSize="20sp" />
+
+            &lt;!&ndash;<ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/grey_arrow" />&ndash;&gt;
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/grey_arrow" />
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_green">
+
+
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/layer_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+<LinearLayout
+    android:layout_below="@+id/head"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="40dp">
+
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Dawson A Message"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/two_buttons"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/grey_txt"
+                android:padding="10dp"
+                android:src="@mipmap/p_user" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:id="@+id/name"
+                android:gravity="center_vertical"
+                android:hint="Your Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_txt"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/two_buttons"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/grey_txt"
+                android:padding="10dp"
+                android:src="@mipmap/email" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:hint="Your Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_txt"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fb_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/two_buttons"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/emil_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/grey_txt"
+                android:padding="10dp"
+                android:src="@mipmap/phone" />
+
+            <EditText
+                android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:hint="Your Contact Number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_txt"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_recording"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/request_red"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Start Recording"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomMark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/layer_marquee"
+            layout="@layout/layer_runningtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000</color>
+    <color name="phone_color">#387b7d</color>
+    <color name="text_color">#474c4d</color>
+    <color name="converstation_color">#408c8f</color>
+    <color name="green">#387b7d</color>
+    <color name="white">#FFF</color>
+    <color name="light_green">#D4E056</color>
+    <color name="banner">#b0b350</color>
+    <color name="grey">#EEE</color>
+    <color name="light_black">#CC000000</color>
+    <color name="grey_text_hint">#D2D2D2</color>
+    <color name="grey_txt">#5A5A5A</color>
+    <color name="twitter_blue">#00BADE</color>
+    <color name="stories">#7e7e7e</color>
+    <color name="helped">#85c8ca</color>
+    <color name="twitter_color">#50b0b3</color>
+    <color name="get_encourged_color">#50b0b3</color>
+    <color name="chat_green">#188C8B</color>
+    <color name="listen_color">#408c8f</color>
+    <color name="green_demanded">#58c2c5</color>
+    <color name="blog_color">#454545</color>
+    <color name="blog_brown">#22262A</color>
+    <color name="request_red">#ED504D</color>
+    <color name="ebooks_color">#b38450</color>
+    <color name="ebook_purple">#9F6BAD</color>
+    <color name="insta_header">#3896B5</color>
+    <color name="background_light_blue">#EEF9F9</color>
+
+    <color name="default_waveform">#178b51</color>
+    <color name="default_waveformFill">#80FFC0</color>
+    <color name="default_playback_indicator">#ffff66</color>
+    <color name="default_timecode">#ddffffdd</color>
+    <color name="default_background">#000000</color>
+</resources>

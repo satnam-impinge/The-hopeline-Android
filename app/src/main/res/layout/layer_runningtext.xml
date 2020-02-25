@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andorid="http://schemas.android.com/tools"
+    android:background="@color/light_green"
+    android:orientation="vertical">
+     <TextView
+          android:id="@+id/markText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/running_text"
+          android:textSize="16sp"
+          android:marqueeRepeatLimit="marquee_forever"
+          android:ellipsize="marquee"
+          android:singleLine="true"
+          android:scrollHorizontally="true"
+          android:textColor="@color/black"
+          android:background="@color/banner"
+          android:padding="10dp"
+          />
+
+    <!--<WebView
+        android:id="@+id/webView_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>-->
+
+    <!--<TextView
+        android:id="@+id/markText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:padding="10dp"
+        android:lines="1"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:text="@string/running_text"
+        android:textColor="@color/black"
+        android:textSize="16sp" />-->
+</LinearLayout>

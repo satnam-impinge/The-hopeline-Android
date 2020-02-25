@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1047689819472",
+    "firebase_url": "https://thehopeline-f0912.firebaseio.com",
+    "project_id": "thehopeline-f0912",
+    "storage_bucket": "thehopeline-f0912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047689819472:android:087f76f570bcd7a1436855",
+        "android_client_info": {
+          "package_name": "com.payoda.hopeline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047689819472-f492de4a007mdq4c8p9ml1732vavgp2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.payoda.hopeline",
+            "certificate_hash": "002ab92398cb4403fc43163a58915a209a657513"
+          }
+        },
+        {
+          "client_id": "1047689819472-kuq36l27t66emq5gt960ae608iios5mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHCvYgkp-fEqPM3t7tsJsukBPqTGTUhiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047689819472-kuq36l27t66emq5gt960ae608iios5mm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047689819472-qtl1ftbdnq3bf5hckmde8mt94hgs79bn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thehopeline.payoda"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

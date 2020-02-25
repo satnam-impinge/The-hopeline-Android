@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/layer_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="0.21"
+        android:layout_height="0dp"
+        android:text="@string/dawson_mcallister_live"
+          android:textColor="@color/green"
+        android:textStyle="bold|italic"
+        android:textSize="26sp"
+        android:gravity="center|bottom"
+       android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/live_on"
+        android:textColor="@color/text_color"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_height="0dp"
+        android:layout_marginStart="45sp"
+        android:layout_marginEnd="20sp"
+
+        android:gravity="center"
+        android:textSize="22sp"
+        android:text="@string/call_during"
+        android:textColor="@color/text_color"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Sunday_evenings"
+        android:textColor="@color/text_color"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_marginTop="3sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dawson"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:textSize="33sp"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Saturday_evenings"
+        android:textColor="@color/text_color"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_marginTop="3sp"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+
+            android:src="@mipmap/call_phone"
+            android:scaleType="fitCenter"
+
+            />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/phone_color"
+            android:text="Call"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+
+
+
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/call1"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:layout_height="0dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/phone_color"
+        android:textStyle="bold"
+        android:text="@string/phone_no"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_if_the_show"
+        android:layout_width="match_parent"
+        android:layout_weight="0.12"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+
+    <TextView
+        android:id="@+id/cal2"
+        android:layout_width="match_parent"
+        android:textColor="@color/text_color"
+
+        android:gravity="center"
+
+        android:textSize="11sp"
+        android:text="@string/if_the_show_is"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        />
+ <TextView
+        android:id="@+id/cal3"
+        android:layout_width="match_parent"
+        android:textColor="@color/text_color"
+
+        android:gravity="center"
+        android:textSize="11sp"
+        android:text="@string/message_to_be_considered"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="33dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:layout_height="0dp"
+       android:layout_marginBottom="3dp"
+        android:id="@+id/bottomMark"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/layer_marquee"
+            layout="@layout/layer_runningtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

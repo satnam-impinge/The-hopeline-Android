@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">TheHopeLine</string>
+    <string name="app_label">THL</string>
+    <string name="action_settings">Settings</string>
+    <string name="phone_no">800-394-4673 (HOPE)</string>
+    <string name="See_show_times">See show times and in to participate!</string>
+
+
+    <string name="Sunday_evenings">Sunday Evenings</string>
+    <string name="running_text">Share This! Connect with a HopeCoach today. #sharehope</string>
+    <string name="dawson">The Hopeline® with Dawson McAllister</string>
+    <string name="Saturday_evenings">Saturday Evenings</string>
+    <string name="insta_running_text">Share This! #sharehope real stories. real people. www.youtube.com/thehopeline check it out today.
+</string>
+    <string name="twitter_running_text">Share This! Follow TheHopeLine on twitter, youtube, instagram and facebook. #sharehope</string>
+    <string name="get_help">GET HELP</string>
+    <string name="Chat_now">CHAT NOW</string>
+    <string name="Call_the_show">CALL THE SHOW</string>
+    <string name="find_a_station">FIND A STATION</string>
+    <string name="join_conversation">JOIN THE CONVERSTATION</string>
+    <string name="helped">HOW HAVE YOU BEEN HELPED?</string>
+    <string name="podcast">Podcast</string>
+    <string name="leave_message">Leave a Message</string>
+
+    <string name="get_encouraged">GET ENCOURAGED</string>
+    <string name="listen">LISTEN</string>
+    <string name="follow">FOLLOW</string>
+
+    <string name="emergency_text">If this is an emergency, dial 911 now.</string>
+
+    <string name="problm_with_app"> PROBLEM WITH THIS APP? </string>
+    <string name="tell_us"> TERMS OF USE AND PRIVACY STATEMENT</string>
+    <string name="voice_msg"> Leave Dawson a Message </string>
+    <string name="part_of_show">If you want to be part of shows simply call in and Call Screener will take your information</string>
+    <string name="dawson_live">Dawson McAllister Live</string>
+    <string name="dawson_online">Dawson Online</string>
+
+    <string name="problem_headline">Thank you for providing your feedback. If this is an emergency, please call 9-1-1.</string>
+    <string name="problem_desc">We apologize for any inconvenience you are experiencing using our app. Please provide as much detail below so we can troubleshoot your problem. Thank you.</string>
+
+    <string name="tellus_headline">Thank you for providing your feedback.</string>
+    <string name="tellus_desc">We want to hear about your experience so we cam improve and serve you and others better. Thanks for taking the time to tell us.</string>
+    <string name="tellus_desc_1">TheHopeLine responded quickly to my need.</string>
+    <string name="tellus_que_1">TheHopeLine HopeCoach was courteous and professional.</string>
+    <string name="tellus_que_2">I\'m glad I contracted TheHopeLine.</string>
+    <string name="tellus_que_3">I will refer TheHopeLine to my friends.</string>
+    <string name="tellus_que_4">My preferred method of contacting TheHopeLine is:</string>
+    <string name="Thanks_for_listening">Thanks for listening to Dawson McAllister!</string>
+    <string name="dawson_mcallister_live">Dawson McAllister Live</string>
+    <string name="live_on">Live On: Sunday Nights 7-8 pm CST</string>
+    <string name="call_during">Call during the live show to speak with Dawson</string>
+    <string name="if_the_show_is">*If the show is not live right now, click here to leave a message</string>
+    <string name="message_to_be_considered">Message to be considered for next weeks show!</string>
+    <string name="theprayershow">The Prayer Show</string>
+
+</resources>
