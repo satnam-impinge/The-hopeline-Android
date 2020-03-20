@@ -14,8 +14,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
 import com.payoda.hopeline.feedback.Activity_VoiceMsg_Form;
+import com.payoda.hopeline.utils.AppUtils;
 
 /**
  * Created by shivam on 9/2/2016.
@@ -26,6 +28,8 @@ LinearLayout linearLayout_if_the_show;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.call_the_show);
+
+        AppUtils.setScreenName(this, "Call The Show");
 
         ((TextView) findViewById(R.id.head).findViewById(R.id.heading)).setText("Call The Show");
         findViewById(R.id.call1).setOnClickListener(this);

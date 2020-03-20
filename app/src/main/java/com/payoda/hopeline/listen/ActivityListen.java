@@ -12,10 +12,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
 import com.payoda.hopeline.feedback.Activity_VoiceMsg_Form;
 import com.payoda.hopeline.get_encouraged.InstagramFeed;
 import com.payoda.hopeline.main.ActivityWebView;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 import com.payoda.hopeline.utils.MyMediaPlayer1;
 import com.payoda.hopeline.utils.MyMediaPlayer2;
@@ -40,6 +43,8 @@ public class ActivityListen extends Activity implements MediaPlayer.OnErrorListe
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_listen);
+
+        AppUtils.setScreenName(this, "Dawson Online");
 
         GlobalConsts.initBack(this);
 

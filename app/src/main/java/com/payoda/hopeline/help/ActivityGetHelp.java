@@ -9,9 +9,11 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 import com.livechatinc.inappchat.ChatWindowActivity;
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
 import com.payoda.hopeline.get_encouraged.InstagramFeed;
 import com.payoda.hopeline.main.ActivityWebView;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 
@@ -25,6 +27,8 @@ public class ActivityGetHelp extends Activity implements View.OnClickListener
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_gethelp);
+
+        AppUtils.setScreenName(this, "Get Help");
 
         GlobalConsts.initBack(this);
 

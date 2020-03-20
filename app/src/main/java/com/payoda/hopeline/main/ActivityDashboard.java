@@ -14,8 +14,11 @@ import android.view.animation.TranslateAnimation;
 import android.webkit.WebView;
 import android.widget.TextView;
 
+
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.livechatinc.inappchat.ChatWindowActivity;
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
 import com.payoda.hopeline.feedback.ActivityFeedBack;
 import com.payoda.hopeline.get_encouraged.InstagramFeed;
@@ -23,6 +26,7 @@ import com.payoda.hopeline.help.ActivityGetHelp;
 import com.payoda.hopeline.listen.ActivityListen;
 import com.payoda.hopeline.listen.CallTheShow;
 import com.payoda.hopeline.prayer_show.PrayerFeedActivity;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 import static com.payoda.hopeline.R.color.grey;
@@ -32,26 +36,28 @@ public class ActivityDashboard extends Activity implements View.OnClickListener 
 
     private Context context = this;
     TextView footer;
-    private FirebaseAnalytics firebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_dashboard);
+        FirebaseApp.initializeApp(getApplicationContext());
+
+        AppUtils.setScreenName(this, "Dashboard");
+
+//        FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(this);
+//        firebaseAnalytics.setAnalyticsCollectionEnabled(true);
+//        firebaseAnalytics.setCurrentScreen(this, "Dashboard", null);
 
 //        int k = 1/0;
 //        Log.e("crash","value "+k);
 
-        //Init Firebase Analytics instance
-        firebaseAnalytics  = FirebaseAnalytics.getInstance(this);
-        firebaseAnalytics.setCurrentScreen(this, "Activity Dashboard", null /* class override */);
-
-        Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Dummy ID");
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Testing");
-        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "image");
-        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+//        Bundle bundle = new Bundle();
+//        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Dummy ID");
+//        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Testing");
+//        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "image");
+//        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 
         findViewById(R.id.get_help).setOnClickListener(this);
         findViewById(R.id.call_the_show).setOnClickListener(this);
