@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.payoda.hopeline.R;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 /**
@@ -32,6 +33,9 @@ public class ActivityTellUs extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_tellus);
+
+        AppUtils.setScreenName(this, "Feedback");
+
         GlobalConsts.initBack(this);
         select_q1 = (TextView) findViewById(R.id.select_q1);
         select_q1.setOnClickListener(this);

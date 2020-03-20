@@ -17,7 +17,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 import com.payoda.hopeline.utils.WaveformView;
 
@@ -41,7 +43,7 @@ public class Activity_Recording extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recording);
 
-
+        AppUtils.setScreenName(this, "Feedback");
 
         GlobalConsts.initBack(this);
 

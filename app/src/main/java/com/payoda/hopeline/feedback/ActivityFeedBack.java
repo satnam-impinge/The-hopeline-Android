@@ -9,8 +9,10 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
 import com.payoda.hopeline.main.ActivityWebView;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 import static com.payoda.hopeline.R.color.grey;
@@ -26,6 +28,7 @@ public class ActivityFeedBack extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_feedback);
         GlobalConsts.initBack(this);
 
+        AppUtils.setScreenName(this, "Feedback");
 
         ((TextView) findViewById(R.id.head).findViewById(R.id.heading)).setText("Feedback");
 

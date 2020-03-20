@@ -23,7 +23,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 import java.net.URLEncoder;
@@ -45,6 +47,8 @@ public class PrayerFeedActivity extends Activity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prayer_feed);
+
+        AppUtils.setScreenName(this, "Prayer Show");
 
         GlobalConsts.initBack(this);
 

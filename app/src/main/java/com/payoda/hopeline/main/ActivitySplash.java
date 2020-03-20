@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
-
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.payoda.hopeline.R;
 import com.payoda.hopeline.utils.FooterLink_Model;
 import com.payoda.hopeline.utils.GlobalConsts;

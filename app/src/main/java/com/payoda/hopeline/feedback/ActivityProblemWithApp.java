@@ -14,7 +14,9 @@ import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 import java.util.regex.Matcher;
@@ -38,6 +40,9 @@ public class ActivityProblemWithApp extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_problemwithapp);
+
+        AppUtils.setScreenName(this, "Feedback");
+
         GlobalConsts.initBack(this);
         findViewById(R.id.heading).setVisibility(View.GONE);
         email_address = (EditText) findViewById(R.id.email_address);

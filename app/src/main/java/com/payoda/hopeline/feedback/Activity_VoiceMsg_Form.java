@@ -15,7 +15,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 
@@ -35,6 +37,9 @@ public class Activity_VoiceMsg_Form extends Activity implements View.OnClickList
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_voice_msg_form);
+
+        AppUtils.setScreenName(this, "Voice Message");
+
         GlobalConsts.initBack(this);
 
         requestPermission(Manifest.permission.RECORD_AUDIO,

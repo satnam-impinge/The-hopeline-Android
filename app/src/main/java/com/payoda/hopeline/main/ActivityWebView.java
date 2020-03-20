@@ -17,7 +17,9 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.payoda.hopeline.MyApplication;
 import com.payoda.hopeline.R;
+import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
 public class ActivityWebView extends Activity {
@@ -31,6 +33,8 @@ public class ActivityWebView extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
+
+        AppUtils.setScreenName(this, "Webview");
 
         GlobalConsts.initBack(this);
 
