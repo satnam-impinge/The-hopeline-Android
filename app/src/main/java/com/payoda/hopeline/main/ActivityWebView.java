@@ -22,10 +22,13 @@ import com.payoda.hopeline.R;
 import com.payoda.hopeline.utils.AppUtils;
 import com.payoda.hopeline.utils.GlobalConsts;
 
+import java.lang.reflect.InvocationTargetException;
+
 public class ActivityWebView extends Activity {
 
     private Context context = this;
     private ProgressDialog dialog;
+    private WebView view;
     TextView footer;
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -78,7 +81,7 @@ public class ActivityWebView extends Activity {
         if (intent.hasExtra(GlobalConsts.EXTRA_TITLE))
             ((TextView) findViewById(R.id.head).findViewById(R.id.heading)).setText(intent.getStringExtra(GlobalConsts.EXTRA_TITLE));
 
-        WebView view = (WebView) findViewById(R.id.webView);
+        view = (WebView) findViewById(R.id.webView);
         view.setWebViewClient(new MyBrowser());
         view.getSettings().setLoadsImagesAutomatically(true);
         view.getSettings().setJavaScriptEnabled(true);
@@ -114,8 +117,19 @@ public class ActivityWebView extends Activity {
 
     }
 
+
+
+    @Override
+    protected void onDestroy() {
+        view.destroy();
+        view = null;
+        super.onDestroy();
+    }
+
     @Override
     protected void onPause() {
+        view.onPause();
+        view.pauseTimers();
         super.onPause();
         if (dialog != null && dialog.isShowing()){
             dialog.dismiss();

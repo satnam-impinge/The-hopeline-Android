@@ -18,6 +18,7 @@ public class GlobalConsts {
 //    sdjfl;ash;dfhklasd
 //    public static final String DMLive = "http://icy3.abacast.com/shepherdscall-hopenowmp3-48";
     public static final String DMLive = "https://live.wostreaming.net/direct/shepherdscall-talkmp3-ibc1?soure=DMLive";
+    public static final String DMLive_OnDemand = "http://dawsonlive.libsyn.com/";
     public static final String HotLine = "http://icy3.abacast.com/shepherdscall-hopelinereplayaac-48";
     public static final String PLAYING = "PLAYING";
     public static final String PAUSE = "PAUSED";

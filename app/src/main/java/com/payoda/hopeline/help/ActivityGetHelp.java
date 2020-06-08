@@ -137,7 +137,7 @@ public class ActivityGetHelp extends Activity implements View.OnClickListener
                     case R.id.blog:
                         intent = new Intent(context, ActivityWebView.class);
                         intent.putExtra(GlobalConsts.EXTRA_URL, GlobalConsts.URL+"tag-list-mobile/");
-                        intent.putExtra(GlobalConsts.EXTRA_TITLE, "Blog");
+                        intent.putExtra(GlobalConsts.EXTRA_TITLE, "Topics");
                         startActivity(intent);
                         v.setBackgroundColor(getResources().getColor(R.color.blog_color));
                         break;
