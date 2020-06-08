@@ -16,11 +16,14 @@
     <string name="get_help">GET HELP</string>
     <string name="Chat_now">CHAT NOW</string>
     <string name="Call_the_show">CALL THE SHOW</string>
+    <string name="ask_dawson">ASK DAWSON</string>
     <string name="find_a_station">FIND A STATION</string>
     <string name="join_conversation">JOIN THE CONVERSTATION</string>
     <string name="helped">HOW HAVE YOU BEEN HELPED?</string>
     <string name="podcast">Podcast</string>
+    <string name="find_your_issue">FIND YOUR ISSUE</string>
     <string name="leave_message">Leave a Message</string>
+    <string name="get_dawson_texts">GET DAWSON TEXTS </string>
 
     <string name="get_encouraged">GET ENCOURAGED</string>
     <string name="listen">LISTEN</string>

@@ -130,14 +130,14 @@
                 android:layout_height="50dp"
                 android:padding="5dp"
                 android:scaleType="centerInside"
-                android:src="@mipmap/phone_hopeline" />
+                android:src="@mipmap/search_icon" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:gravity="right"
-                android:text="@string/Call_the_show"
+                android:text="@string/find_your_issue"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="20sp"

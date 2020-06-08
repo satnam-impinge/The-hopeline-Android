@@ -176,9 +176,16 @@ public class ActivityDashboard extends Activity implements View.OnClickListener 
                         v.setBackgroundColor(Color.TRANSPARENT);
                         break;
                     case R.id.call_the_show:
-                        Intent intent_call = new Intent(ActivityDashboard.this, CallTheShow.class);
-                        startActivity(intent_call);
+                        intent = new Intent(ActivityDashboard.this, ActivityWebView.class);
+                        intent.putExtra("url","https://www.thehopeline.com/find-your-issue/");
+                        intent.putExtra(GlobalConsts.EXTRA_TITLE,"Find Your Issue");
+                        startActivity(intent);
                         v.setBackgroundColor(getResources().getColor(R.color.phone_color));
+
+
+                      /*  Intent intent_call = new Intent(ActivityDashboard.this, CallTheShow.class);
+                        startActivity(intent_call);
+                        v.setBackgroundColor(getResources().getColor(R.color.phone_color));*/
 
                         break;
 
