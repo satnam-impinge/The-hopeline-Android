@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -33,6 +32,7 @@
                 <!--Item 1 -->
 
                 <RelativeLayout
+                    android:id="@+id/rel_podcast"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:background="@drawable/listen_item">
@@ -47,7 +47,10 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
                         android:layout_toRightOf="@+id/img_dawson"
                         android:layout_toLeftOf="@+id/linr_play"
                         android:gravity="center_vertical"
@@ -57,20 +60,31 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="DMLive"
+                            android:text="Dawson's"
                             android:textColor="@color/blog_brown"
                             android:textSize="20sp"
                             android:textStyle="bold"
                             android:typeface="sans" />
 
 
-                        <TextView
+                       <!-- <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:text="Replay"
+                            android:visibility="invisible"
                             android:textColor="@android:color/secondary_text_dark"
                             android:textSize="15sp"
+                            android:typeface="sans" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Podcast"
+                            android:textColor="@color/blog_brown"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
                             android:typeface="sans" />
 
                     </LinearLayout>
@@ -141,7 +155,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_toLeftOf="@+id/linr_play_demand"
                     android:layout_toRightOf="@+id/img_onDemand"
                     android:gravity="center_vertical"
@@ -157,15 +174,18 @@
                         android:textStyle="bold"
                         android:typeface="sans" />
 
-
+                    <!--android:textSize="15sp"
+                    android:typeface="sans"-->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="ON DEMAND"
+                        android:text="On Demand"
                         android:textColor="@color/blog_brown"
-                        android:textSize="15sp"
-                        android:typeface="sans" />
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        />
 
                 </LinearLayout>
 
