@@ -118,10 +118,6 @@ public class ActivitySplash extends Activity {
                 else
                     footerLink_model.setFollow_screen_link("nolink");
 
-
-
-
-
                 footerLink_model.setEmail_mentor(obj.getJSONObject("email_mentor").getString("content"));
                 if (obj.getJSONObject("email_mentor").has("link"))
                     footerLink_model.setEmail_mentor_link(obj.getJSONObject("email_mentor").getString("link"));
@@ -135,8 +131,6 @@ public class ActivitySplash extends Activity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-
         }
     }
 

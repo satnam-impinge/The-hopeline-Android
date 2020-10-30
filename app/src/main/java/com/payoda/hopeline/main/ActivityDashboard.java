@@ -95,7 +95,6 @@ public class ActivityDashboard extends Activity implements View.OnClickListener 
         footer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 if (!(GlobalConsts.footerLink_model.getMobile_app_marquee_link().equals("")
                         || GlobalConsts.footerLink_model.getMobile_app_marquee_link().equals("nolink"))) {
 

@@ -67,6 +67,7 @@ public class ActivityListen extends Activity implements MediaPlayer.OnErrorListe
         findViewById(R.id.find_a_station).setOnClickListener(this);
         findViewById(R.id.img_join_the_converstation).setOnClickListener(this);
         findViewById(R.id.img_follow).setOnClickListener(this);
+        findViewById(R.id.rel_podcast).setOnClickListener(this);
 
         ((TextView) findViewById(R.id.head).findViewById(R.id.heading)).setText(getResources().getString(R.string.dawson_online));
 
@@ -231,8 +232,10 @@ public class ActivityListen extends Activity implements MediaPlayer.OnErrorListe
         //player2 = (ImageView) findViewById(R.id.player_2);
         //player2.setTag(GlobalConsts.Player2_tag);
 
-        player1.setOnClickListener(this);
-       // player2.setOnClickListener(this);
+        //This is commented and used whole row to load link
+        //player1.setOnClickListener(this);
+
+        // player2.setOnClickListener(this);
 
         progress1 = (ProgressBar) findViewById(R.id.progress_1);
         progress1.setVisibility(View.GONE);
@@ -291,6 +294,9 @@ public class ActivityListen extends Activity implements MediaPlayer.OnErrorListe
     public void onClick(final View v) {
 
         switch (v.getId()) {
+            case R.id.rel_podcast:
+                startActivity(new Intent(ActivityListen.this, ActivityWebView.class).putExtra("url",GlobalConsts.PodcastUrl).putExtra(GlobalConsts.EXTRA_TITLE,"Dawson's Podcast"));
+                break;
             case R.id.helped:
              /*   Intent inn=new Intent(ActivityListen.this, Activity_VoiceMsg_Form.class);
                 startActivity(inn);
